@@ -1,5 +1,5 @@
 {
-  "name": "esbuild",
+  "name": "esbuild-preact-typescript-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
