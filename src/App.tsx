@@ -47,12 +47,10 @@ const App: preact.FunctionComponent<{ name: string }> = ({ name = '' }) => {
       </header>
 
       <main className={classes.AppMain}>
-        <div className={classes.Content}>
-          <button className={classes.Button} onClick={() => setShow(true)}>Click me to render a lazily loaded component</button>
-          {show ?
-            <LazyComponent />
-            : null}
-        </div>
+        <button className={classes.Button} onClick={() => setShow(true)}>Click me to render a lazily loaded component</button>
+        {show ?
+          <LazyComponent />
+          : null}
       </main>
     </div>
   );
