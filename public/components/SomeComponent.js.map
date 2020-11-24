@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/components/SomeComponent.tsx"],
+  "sourcesContent": ["import { h } from 'preact';\nimport { css } from 'goober';\n\nconst Wrapper = css`\n  border-radius: 8px;\n  background-color: #484c54;\n  padding: 1rem;\n  margin: 2rem;\n  max-width: 400px;\n  align-self: center;\n`;\n\nexport default () => {\n  return (\n    <div className={Wrapper}>\n      <p>This is a lazily loaded component</p>\n      <p>When you clicked on the button above, you should see a network request being sent from the browser</p>\n    </div>\n  )\n}"],
+  "mappings": "gDAGA,IAAM,EAAU;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,IASD,IAEX,EAAC,MAAD,CAAK,UAAW,GACd,EAAC,IAAD,KAAG,qCACH,EAAC,IAAD,KAAG",
+  "names": []
+}

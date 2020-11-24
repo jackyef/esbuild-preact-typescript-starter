@@ -6,20 +6,18 @@
   "scripts": {
     "dev": "node scripts/dev.js & live-server public",
     "build": "node scripts/build.js",
-    "run": "live-server public"
+    "serve": "live-server public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.8.14",
     "goober": "^2.0.15",
-    "live-server": "^1.2.1",
-    "preact": "^10.5.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "preact": "^10.5.7"
   },
   "devDependencies": {
+    "esbuild": "^0.8.14",
+    "live-server": "^1.2.1",
     "node-watch": "^0.7.0"
   }
 }

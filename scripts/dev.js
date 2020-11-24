@@ -7,7 +7,9 @@ const run = async () => {
   let result = await require('esbuild').build({
     entryPoints: [path.resolve(__dirname, '../src/client.tsx')],
     bundle: true,
-    outfile: path.resolve(__dirname, '../public/out.js'),
+    outdir: path.resolve(__dirname, '../public'),
+    // enable experimental codesplitting https://github.com/evanw/esbuild/blob/57d6f87e089f44404df5040d2b8a0a12815b6d60/CHANGELOG.md#0516
+    splitting: true, 
     define: {
       'process.env.NODE_ENV': JSON.stringify('development'),
     },
@@ -17,6 +19,7 @@ const run = async () => {
       '.png': 'file', // make image file use file-loader
     },
     target: 'es2015',
+    format: 'esm',
 
     incremental: true, // used to enable faster rebuild on development
   });
