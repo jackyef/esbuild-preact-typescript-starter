@@ -24,6 +24,6 @@ These numbers of course would increase as the number of modules increase. One id
     73 │ export const AppMain = css`
        ╵        ~~~~~
     ```
-  - This basically means if you need to support older browsers that doesn't support ES6 (es2016), esbuild might not be viable for you.
+  - This basically means if you need to support older browsers that doesn't support ES6 (es2015), esbuild might not be viable for you.
   - Follow the issue https://github.com/evanw/esbuild/issues/297
 
