@@ -3,13 +3,13 @@ This project is a POC implementation of building a web-app with preact and TypeS
 
 This project builds in 30-40ms. On development, it rebuilds under 10ms (when you make changes). These numbers are taken on a MacBook Pro 13" 2020. 
 
-These numbers of course would increase as the number of modules increase. One idea to improve this is to use [Snowpack](https://github.com/snowpackjs/snowpack) on development, and then use esbuild when bundling to production.
+These numbers of course would increase as the number of modules increase. One idea to improve this is to use [Snowpack](https://github.com/snowpackjs/snowpack) on development, and then only use esbuild when bundling to production.
 
 ## Includes
 - [**esbuild**](https://github.com/evanw/esbuild), for bundling, transpiling, minifying, and generating source maps
 - [**Preact**](https://github.com/preactjs/preact), UI runtime
 - [**TypeScript**](https://www.typescriptlang.org/)
-- **Goober**, [a less than 1KB css-in-js solution](https://github.com/cristianbote/goober)
+- [**Goober**](https://github.com/cristianbote/goober), a less than 1KB css-in-js solution
 
 ## Caveats
 - Codesplitting is still experimental
