@@ -41,7 +41,7 @@ const App: preact.FunctionComponent<{ name: string }> = ({ name = '' }) => {
             <br />
             <code>$ yarn build</code>
             <br />
-            <code>$ yarn run</code>
+            <code>$ yarn serve</code>
           </pre>
         </div>
       </header>

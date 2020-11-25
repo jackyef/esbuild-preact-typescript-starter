@@ -11,6 +11,29 @@ These numbers of course would increase as the number of modules increase. One id
 - [**TypeScript**](https://www.typescriptlang.org/)
 - [**Goober**](https://github.com/cristianbote/goober), a less than 1KB css-in-js solution
 
+## Instructions
+1. Before doing anything, install the dependencies
+    ```
+    yarn
+    ```
+
+2. Run the following the start the development server
+    ```
+    yarn dev
+    ```
+
+3. Make changes as you need
+
+4. When you are ready to bundle to production:
+    ```
+    yarn build
+    ```
+
+5. Test serving the production bundle locally
+    ```
+    yarn serve
+    ```
+
 ## Caveats
 - Codesplitting is still experimental
   - Codesplitting is only available when outputting to `esm` format. This output can only be used inside `<script type="module">` tag
